@@ -687,6 +687,37 @@ footer strong{color:rgba(255,255,255,.85)}
 .btn-line img{height:50px;display:block}
 
 
+
+.dates-grid-2col{
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  max-width:720px;margin:36px auto 0;
+}
+.date-track-label{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.track-emoji{font-size:52px;line-height:1;flex-shrink:0}
+.track-grade{font-size:19px;font-weight:900;color:var(--brown);line-height:1.2;margin-bottom:3px}
+.track-type{font-size:13px;font-weight:700;letter-spacing:.03em}
+.date-card-hotpot{
+  border-top:4px solid var(--orange);
+  background:linear-gradient(160deg,#FFFBF0,#FFF3D0);
+}
+.date-card-hotpot .track-type{color:var(--orange-deep)}
+.date-card-drink{
+  border-top:4px solid var(--blue);
+  background:linear-gradient(160deg,#F0F6FF,#E3EEFF);
+}
+.date-card-drink .track-type{color:var(--blue)}
+
+.btn-fb{
+  display:inline-flex;align-items:center;
+  background:#1877F2;
+  color:#fff;font-weight:700;font-size:14px;
+  padding:0 22px;border-radius:40px;height:50px;
+  text-decoration:none;
+  box-shadow:0 4px 14px rgba(24,119,242,.4);
+  transition:all .25s;
+  white-space:nowrap;
+}
+.btn-fb:hover{transform:translateY(-3px);background:#1565D8;box-shadow:0 8px 22px rgba(24,119,242,.5)}
 </style>
 </head>
 <body>
@@ -735,7 +766,7 @@ footer strong{color:rgba(255,255,255,.85)}
       <div class="price-early-label">⚡ 早鳥優惠價</div>
       <div class="price-early">$17,800</div>
       <div class="price-reg">原價 <s>$19,800</s>，省下 2,000 元</div>
-      <div class="price-deadline">⏰ 早鳥截止：5月15日（五）</div>
+      <div class="price-deadline">⏰ 早鳥截止：5月20日（三）</div>
     <div id="countdown-box">
       <div class="countdown-label">距離截止還有</div>
       <div class="countdown-digits">
@@ -1129,15 +1160,18 @@ footer strong{color:rgba(255,255,255,.85)}
 <section id="register" style="padding-top:0">
   <div class="section-tag">報名資訊</div>
   <h2 class="section-title">2026 梯次一覽</h2>
-  <div class="dates-grid">
-    <div class="date-card">
-      <div class="date-badge db-hotpot">🍲 國中 1–2 年級｜火鍋店</div>
-      <div class="date-grade">國中第一梯次（密集週班）</div>
+  <div class="dates-grid dates-grid-2col">
+    <div class="date-card date-card-hotpot">
+      <div class="date-track-label">
+        <span class="track-emoji">🍲</span>
+        <div>
+          <div class="track-grade">國中 1–2 年級</div>
+          <div class="track-type">火鍋店創業體驗</div>
+        </div>
+      </div>
       <div class="date-batch">
         <div class="batch-label">上課日期</div>
-        <div class="batch-dates">
-          7/6（一）至 7/10（五）
-        </div>
+        <div class="batch-dates">7/6（一）至 7/10（五）</div>
       </div>
       <div class="date-meta">
         <span>🕘 09:00–16:00</span>
@@ -1145,44 +1179,17 @@ footer strong{color:rgba(255,255,255,.85)}
         <span>👥 限16人</span>
       </div>
     </div>
-    <div class="date-card">
-      <div class="date-badge db-hotpot">🍲 國中 1–2 年級｜火鍋店</div>
-      <div class="date-grade">國中第二梯次（週末班）</div>
-      <div class="date-batch">
-        <div class="batch-label">上課日期</div>
-        <div class="batch-dates">
-          7/18（六）、7/19（日）、8/2（日）<br>8/9（日）、8/16（日）
+    <div class="date-card date-card-drink">
+      <div class="date-track-label">
+        <span class="track-emoji">🧋</span>
+        <div>
+          <div class="track-grade">國小 5–6 年級</div>
+          <div class="track-type">飲料店創業體驗</div>
         </div>
       </div>
-      <div class="date-meta">
-        <span>🕘 09:00–16:00</span>
-        <span>📍 青埔大教室</span>
-        <span>👥 限16人</span>
-      </div>
-    </div>
-    <div class="date-card">
-      <div class="date-badge db-drink">🧋 國小 5–6 年級｜飲料店</div>
-      <div class="date-grade">國小第一梯次（週末班）</div>
       <div class="date-batch">
         <div class="batch-label">上課日期</div>
-        <div class="batch-dates">
-          7/4（六）、7/5（日）、7/12（日）<br>7/19（日）、7/26（日）
-        </div>
-      </div>
-      <div class="date-meta">
-        <span>🕘 09:00–16:00</span>
-        <span>📍 青埔大教室</span>
-        <span>👥 限16人</span>
-      </div>
-    </div>
-    <div class="date-card">
-      <div class="date-badge db-drink">🧋 國小 5–6 年級｜飲料店</div>
-      <div class="date-grade">國小第二梯次（密集週班）</div>
-      <div class="date-batch">
-        <div class="batch-label">上課日期</div>
-        <div class="batch-dates">
-          7/27（一）至 7/31（五）
-        </div>
+        <div class="batch-dates">7/27（一）至 7/31（五）</div>
       </div>
       <div class="date-meta">
         <span>🕘 09:00–16:00</span>
@@ -1241,10 +1248,7 @@ footer strong{color:rgba(255,255,255,.85)}
       <div class="faq-q">國小班和國中班的課程內容有什麼不同？為什麼一個開飲料店、一個開火鍋店？<span class="faq-icon">▼</span></div>
       <div class="faq-a">兩個年段共用相同的五日課程架構（選址→品牌→合夥→危機→發表），但在情境設定與難度上會有所區隔。國小5–6年級以「飲料店」為主題，情境相對日常，財務計算以加減為主，工作表有較多引導提示；國中1–2年級以「火鍋店」為主題，加入更複雜的成本結構與決策邏輯。兩個年段分班授課，不會混班，老師也會依孩子的年齡調整引導方式與提問深度喔。</div>
     </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">週末班和密集週班，課程內容一樣嗎？哪種學習效果比較好？<span class="faq-icon">▼</span></div>
-      <div class="faq-a">課程內容與學習目標完全相同，差別只在上課頻率。密集週班連續五天，孩子的沉浸感與組隊凝聚力通常會較強，適合希望有完整連貫體驗的學員；週末班間隔較長，孩子有時間在每次上課前後消化、反思，也適合平日有其他行程安排的家庭。建議可以依照孩子的學習風格與家庭行程彈性選擇。</div>
-    </div>
+
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">團隊是如何分組的？孩子可以和朋友指定同組嗎？<span class="faq-icon">▼</span></div>
       <div class="faq-a">Day 1–2 個人賽不需分組，孩子各自獨立操作。Day 3 開始的團體賽（4人一組）由教師在 Day 2 下午宣布，分組原則會兼顧學習互補性與班級均衡。若孩子有認識的同學一起報名，可在報名時備註希望分同組，我們會盡力安排，但因名額與組別平衡考量，無法保證。陌生組合也是課程設計的一部分，模擬真實職場與陌生夥伴合作的情境，請家長們見諒喔！</div>
@@ -1278,10 +1282,14 @@ footer strong{color:rgba(255,255,255,.85)}
       <a href="https://lin.ee/tNoLcqQ" target="_blank" rel="noopener" class="btn-line">
         <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0">
       </a>
+      <a href="https://www.facebook.com/QingpuBigBoss" target="_blank" rel="noopener" class="btn-fb">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:7px;flex-shrink:0"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        追蹤粉絲專頁
+      </a>
     </div>
     <div class="cta-spots">
       <span class="spots-dot"></span>
-      每梯次僅16人，手刀搶位！早鳥截止 5/15（五）
+      每梯次僅16人，手刀搶位！早鳥截止 5/20（三）
     </div>
   </div>
 </div>
@@ -1340,7 +1348,7 @@ document.querySelectorAll('.why-card,.role-card,.award-card,.date-card,.learn-ca
 
 // Countdown to 2026-05-15 23:59:59 Taiwan time
 function updateCountdown() {
-  var target = new Date('2026-05-15T23:59:59+08:00');
+  var target = new Date('2026-05-20T23:59:59+08:00');
   var now = new Date();
   var diff = target - now;
   if (diff <= 0) {
