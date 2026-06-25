@@ -868,8 +868,27 @@ footer strong{color:rgba(255,255,255,.85)}
 .dc4 .dc-result{background:#FFE4E4;border-color:#E84040}
 .dc5 .dc-result{background:#F0EAFF;border-color:#7C5CBF}
 
-@media(max-width:600px){
-  .ov-col-result{display:none}
+@media(max-width:700px){
+  /* Overview table: stack layout on mobile */
+  .ov-header{ display:none }
+  .ov-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+    padding:14px 16px;
+  }
+  .ov-col-day{ width:auto }
+  .ov-col-theme{
+    font-size:15px;font-weight:900;
+    color:var(--brown);
+  }
+  .ov-col-result{
+    font-size:12.5px;color:var(--gray);
+    padding-left:4px;
+    border-left:3px solid var(--border);
+    line-height:1.55;
+  }
+  /* Day cards: single column list */
   .dc-list{grid-template-columns:1fr}
 }
 
